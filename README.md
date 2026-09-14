@@ -23,4 +23,4 @@ komutuyla `mobile/legal/site/` altındaki HTML'i yeniden üretip buraya kopyalay
 Sayfalar tek dosyalık statik HTML'dir: CSS gömülüdür, hiçbir dış bağımlılık
 (font, CDN, script, analitik) yoktur.
 
-Veri sorumlusu: İlayda Kani (Tavşan Uykusu) · destek@tavsanuykusu.com.tr
+Veri sorumlusu: İlayda Kani (Tavşan Uykusu) · mrguven35@gmail.com
