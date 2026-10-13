@@ -7,6 +7,9 @@ GitHub Pages üzerinden sunulur.
 - Kullanım Koşulları: https://emreguven35.github.io/tavsan-uykusu-legal/kosullar.html
 - Açık Rıza Metni (bebeğe ait uyku ve gelişim bilgileri): https://emreguven35.github.io/tavsan-uykusu-legal/acik-riza.html
 - Açık Rıza Metni (Anne Sesi): https://emreguven35.github.io/tavsan-uykusu-legal/anne-sesi-riza.html
+- Destek ve sık sorulanlar: https://emreguven35.github.io/tavsan-uykusu-legal/destek.html
+  (elle yazılmış sayfa — markdown'dan ÜRETİLMEZ; site yeniden üretilip kopyalanırken
+  destek.html korunmalı ve index.html'deki Destek bağlantısı yeniden eklenmeli)
 
 ## Nasıl güncellenir
 
