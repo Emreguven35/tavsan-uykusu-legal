@@ -10,6 +10,9 @@ GitHub Pages üzerinden sunulur.
 - Destek ve sık sorulanlar: https://emreguven35.github.io/tavsan-uykusu-legal/destek.html
   (elle yazılmış sayfa — markdown'dan ÜRETİLMEZ; site yeniden üretilip kopyalanırken
   destek.html korunmalı ve index.html'deki Destek bağlantısı yeniden eklenmeli)
+- Hesap silme (Google Play şartı): https://emreguven35.github.io/tavsan-uykusu-legal/hesap-silme.html
+  (elle yazılmış — destek.html gibi korunmalı; index.html'deki bağlantısı yeniden eklenmeli)
+- Şifre sıfırlama: https://emreguven35.github.io/tavsan-uykusu-legal/sifre-sifirla.html (elle yazılmış)
 
 ## Nasıl güncellenir
 
