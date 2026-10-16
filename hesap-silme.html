@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tavşan Uykusu hesap silme</title>
+<meta name="color-scheme" content="light">
+<style>
+:root {
+  --bg: #FFF9F5;
+  --surface: #FFFFFF;
+  --surface-alt: #FFF0E8;
+  --text: #3D2C29;
+  --text-soft: #7A6660;
+  --text-muted: #A99590;
+  --accent: #FF9F6B;
+  --accent-strong: #E0692C;
+  --accent-deep: #993C1D;
+  --border: rgba(61, 44, 41, 0.10);
+  --border-strong: rgba(61, 44, 41, 0.16);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 0 20px 64px; }
+
+header.site {
+  background: linear-gradient(135deg, #FFB5C5 0%, #FFCB77 55%, #FFF9F5 100%);
+  padding: 28px 20px 24px;
+  margin-bottom: 28px;
+}
+header.site .inner { max-width: 44rem; margin: 0 auto; }
+header.site .brand {
+  font-size: 13px; font-weight: 700; letter-spacing: 1.4px;
+  text-transform: uppercase; color: var(--accent-deep); margin: 0;
+}
+header.site h1 { font-size: 28px; line-height: 1.25; margin: 6px 0 0; }
+header.site a.back {
+  display: inline-block; margin-top: 14px; font-size: 14px; font-weight: 600;
+  color: var(--accent-deep); text-decoration: none;
+}
+header.site a.back:hover { text-decoration: underline; }
+
+h1, h2, h3 { line-height: 1.3; }
+h2 { font-size: 21px; margin: 32px 0 12px; }
+h3 { font-size: 17px; margin: 26px 0 8px; color: var(--accent-deep); }
+p { margin: 0 0 14px; color: var(--text-soft); }
+strong { color: var(--text); font-weight: 700; }
+a { color: var(--accent-strong); }
+
+ul, ol { margin: 0 0 16px; padding-left: 22px; color: var(--text-soft); }
+/* 375 px'te uzun e-posta / adres sayfayı yana taşırmasın (tablolar zaten kendi içinde kayar). */
+p, li, h1, h2, h3 { overflow-wrap: anywhere; }
+li { margin-bottom: 7px; }
+li::marker { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
+
+blockquote {
+  margin: 18px 0; padding: 12px 16px;
+  background: var(--surface-alt);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+.table-scroll { overflow-x: auto; margin: 0 0 18px; -webkit-overflow-scrolling: touch; }
+table {
+  border-collapse: collapse; width: 100%; min-width: 30rem;
+  background: var(--surface);
+  border: 1px solid var(--border); border-radius: 10px;
+  font-size: 15px;
+}
+th, td { padding: 10px 12px; text-align: left; vertical-align: top; }
+thead th { background: var(--surface-alt); color: var(--text); font-weight: 700; }
+tbody tr { border-top: 1px solid var(--border); }
+td { color: var(--text-soft); }
+
+footer.site {
+  max-width: 44rem; margin: 0 auto; padding: 24px 20px 48px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted); font-size: 14px;
+}
+footer.site a { color: var(--accent-strong); text-decoration: none; }
+footer.site a:hover { text-decoration: underline; }
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  header.site h1 { font-size: 24px; }
+  h2 { font-size: 19px; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <p class="brand">Tavşan Uykusu</p>
+    <h1>Tavşan Uykusu hesap silme</h1>
+    <a class="back" href="./index.html">← Tüm yasal metinler</a>
+  </div>
+</header>
+<main class="wrap">
+<p>Tavşan Uykusu hesabınızı ve hesabınıza bağlı verileri istediğiniz zaman
+silebilirsiniz. Silme işlemi <strong>geri alınamaz</strong>.</p>
+
+<h2>Önce: aktif aboneliğinizi iptal edin</h2>
+<p><strong>Hesabı silmek aboneliğinizi iptal etmez.</strong> Abonelikleri Apple ve
+Google yönetir; ücretlendirilmeye devam etmemek için hesabınızı silmeden önce
+aboneliğinizi satın aldığınız mağazadan iptal edin. İptalden sonra dönem sonuna
+kadar Premium'u kullanmaya devam edersiniz.</p>
+
+<h3>iPhone (App Store)</h3>
+<ol>
+  <li>iPhone'unuzda <strong>Ayarlar</strong> uygulamasını açın.</li>
+  <li>En üstteki <strong>adınıza</strong> (Apple Kimliği) dokunun.</li>
+  <li><strong>Abonelikler</strong>'e dokunun ve <strong>Tavşan Uykusu</strong>'nu seçin.</li>
+  <li><strong>Aboneliği İptal Et</strong>'e dokunup onaylayın.</li>
+</ol>
+<p>Bir sonraki dönem ücretinin alınmaması için iptali yenileme tarihinden
+<strong>en az 24 saat önce</strong> yapın.</p>
+
+<h3>Android (Google Play)</h3>
+<ol>
+  <li><strong>Google Play Store</strong> uygulamasını açın.</li>
+  <li>Sağ üstteki <strong>profil simgenize</strong> dokunun.</li>
+  <li><strong>Ödemeler ve abonelikler › Abonelikler</strong>'e gidin ve
+      <strong>Tavşan Uykusu</strong>'nu seçin.</li>
+  <li><strong>Aboneliği iptal et</strong>'e dokunup adımları tamamlayın.</li>
+</ol>
+<p>Bilgisayardan da
+<a href="https://play.google.com/store/account/subscriptions">play.google.com/store/account/subscriptions</a>
+adresinden, aboneliği satın aldığınız Google hesabıyla iptal edebilirsiniz.</p>
+
+<h2>Uygulama içinden silme</h2>
+<p>Uygulamada <strong>Profil › Ayarlar › Hesabımı Sil</strong> adımlarını izleyin
+ve onaylayın. Hesabınız ve aşağıda sayılan veriler hemen silinir.</p>
+
+<h2>Uygulamayı indirmeden silme</h2>
+<p>Uygulamaya erişiminiz yoksa, hesabınıza kayıtlı e-posta adresinden
+<a href="mailto:tavsanuykusu@hotmail.com?subject=Hesap%20silme%20talebi"><strong>tavsanuykusu@hotmail.com</strong></a>
+adresine <strong>&ldquo;Hesap silme talebi&rdquo;</strong> konulu bir e-posta gönderin.
+Talebiniz <strong>7 gün içinde</strong> işlenir ve silme tamamlandığında size
+e-postayla bilgi verilir.</p>
+<p>Talebin hesap sahibinden geldiğinden emin olmak için e-postayı hesabınıza
+kayıtlı adresten göndermeniz gerekir. Şifrenizi asla e-postayla paylaşmayın.</p>
+
+<h2>Silinen veriler</h2>
+<p>Hesabınız silindiğinde şu veriler hemen ve kalıcı olarak silinir:</p>
+<ul>
+  <li>Hesap bilgileriniz (e-posta adresiniz, şifrenizin özeti), oturumlarınız,
+      bildirim anahtarlarınız ve bildirim tercihleriniz</li>
+  <li>Bebek profilleri, boy ve kilo ölçümleri, uyku kayıtları, uyku planları ve
+      eğitim programı</li>
+  <li>Asistanla yaptığınız sohbetlerin geçmişi</li>
+  <li>Anne Sesi: ses profiliniz, sesinizle hazırlanan ninni ve masal dosyaları
+      ve varsa ses hizmeti sağlayıcısındaki geçici ses modeli</li>
+  <li>Topluluk profiliniz (takma adınız), beğenileriniz, kaydettikleriniz ve
+      engelleme listeniz</li>
+  <li>Abonelik kayıtlarınız ve abonelik olay kayıtlarınız; abonelik yönetim
+      hizmetimiz RevenueCat'teki müşteri kaydınızın silinmesi de istenir</li>
+  <li>Eğitim videosu ilerlemeniz, plan geri bildirimleriniz ve size gönderilen
+      bildirimlerin kayıtları</li>
+</ul>
+
+<h2>Saklanan veriler</h2>
+<ul>
+  <li><strong>Topluluk paylaşımları:</strong> Yazdığınız konu ve cevaplar, diğer
+      annelerin konuşmaları bozulmasın diye sizinle bağlantısı koparılarak
+      &ldquo;Silinmiş kullanıcı&rdquo; adıyla kalır; yaptığınız şikâyetler de sizinle
+      bağlantısı olmadan kalır. Kalmasını istemediğiniz paylaşımları hesabınızı
+      silmeden önce uygulamadan silebilirsiniz.</li>
+  <li><strong>Onay kayıtları:</strong> Verdiğiniz onayların türü, sürümü ve zamanı,
+      olası uyuşmazlıklarda ispat için kimliğinizden ayrılarak, yalnızca e-posta
+      adresinizin geri döndürülemez özetiyle eşleştirilmiş olarak 10 yıl saklanır.</li>
+  <li><strong>Kullanım sayaçları:</strong> Hizmet maliyetini izlemek için tutulan
+      sayaçlar (hangi hizmetin ne kadar kullanıldığı) sizinle bağlantısı
+      koparılarak kalır; mesaj ya da kayıt içeriği taşımaz.</li>
+  <li><strong>Yedekler ve sistem kayıtları:</strong> Veritabanı yedekleri en fazla
+      3 ay saklanır; silinen hesabın verileri bu sürenin sonunda yedeklerden de
+      çıkar. Sunucu kayıtları en fazla 30 gün, hata kayıtları en fazla 90 gün
+      saklanır.</li>
+  <li><strong>Mağaza kayıtları:</strong> Satın alma ve fatura kayıtlarınız Apple ya
+      da Google hesabınızda, o şirketlerin kurallarına göre tutulur; bunlar bizim
+      elimizde değildir.</li>
+</ul>
+<p>Ayrıntılar için <a href="./gizlilik.html">Gizlilik Politikası ve Aydınlatma
+Metni</a>'ne bakabilirsiniz.</p>
+
+<hr>
+<p><a href="./destek.html">Destek ve sık sorulanlar</a> ·
+<a href="./gizlilik.html">Gizlilik Politikası ve Aydınlatma Metni</a> ·
+<a href="./kosullar.html">Kullanım Koşulları</a></p>
+</main>
+<footer class="site">
+  <p>Son güncelleme: 16 Ekim 2026</p>
+  <p>İlayda Kani (Tavşan Uykusu) · Menderes / İzmir ·
+     <a href="mailto:tavsanuykusu@hotmail.com">tavsanuykusu@hotmail.com</a></p>
+</footer>
+</body>
+</html>
